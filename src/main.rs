@@ -1,12 +1,5 @@
 use actix_cors::Cors;
-use actix_web::{
-    error, get,
-    http::{header::ContentType, StatusCode},
-    web, App, HttpResponse, HttpServer, Responder, Result,
-};
-use derive_more::{Display, Error};
-use regex::Regex;
-use serde::{Deserialize, Serialize};
+use actix_web::{get, web, App, HttpResponse, HttpServer, Responder};
 use std::sync::Arc;
 use tokio::sync::Mutex;
 
